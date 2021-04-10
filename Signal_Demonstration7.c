@@ -19,9 +19,11 @@ void myhandler(int signum){
         printf("\nHey, I got SIGFPE: %d\n\n",signum);
         break;
     case 9:
+            // we cannot override or make our own ISR for signal 9
         printf("\nHey, I got SIGKILL: %d\n\n",signum);
         break;
     case 19:
+            // we cannot override or make our own ISR for signal 19
         printf("\nHey, I got SIGSTOP: %d\n\n",signum);
         break;
         
