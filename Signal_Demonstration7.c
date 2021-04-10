@@ -37,6 +37,7 @@ int main(){
     signal(SIGSTOP,&myhandler);
 
     //this will run "myhandler" is any of the above signals are executed
+    //becuse we have provided reference of same function to all the signals
 
     while(1){
         printf("I am in an infinite loop!\n");
