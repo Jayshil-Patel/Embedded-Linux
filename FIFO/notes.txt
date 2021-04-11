@@ -1,0 +1,15 @@
+in pipes we have created only one program
+in case of named pipe we will have 2 different program
+
+here parent will make fork and also make sender.c
+and child will make reciever.c
+
+sender.c will create a named pipe or FIFO and sender will
+put data in pipe, and if reciever have same namefile data then
+and then only it will recieve data
+
+FIFO can be created using mkfifo
+
+this file will be created in out hard disk
+
+FIFO is used for unrelated process and unrelated process
