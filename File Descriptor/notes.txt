@@ -1,0 +1,47 @@
+Return value of printf("number") is number of 
+characters to be printed in this case 6
+
+In case of scanf it returns number of character it 
+scanned
+
+printf is part of stdio.h this is 
+stored in our Hard disk
+
+FD table stores indexes , FD[0], FD[1] etc locations
+FD[0] is index for all input files
+
+first compiler moves to stdio.h to scan for printf
+then moves to FD table and then sees FD[0] and this 
+gives location in our Hard disk which stores defination 
+for printf
+
+FD[1] is always coonsidered for output
+and FD[1] indexes to all output files in Hard disk
+ 
+whatever file we make its number gets updated in FD
+
+when we open f=fopen("test.txt","w") if this is not present 
+in HDD it gets created and we get a value passed in
+f containing random values, its nothing but FD index 
+in FD
+
+randomly genetated contains anything except0, 1, 2 
+
+if file is not created successfully it will pass 
+-1 in f which FD index for error files
+and generates system generated message
+
+the function "close(1)" will restrict entry of 1
+close(1) will block all output 
+
+if we put close(0) it will not take input and then 
+display garbage value, but importantly FD will
+be equal to 0, since 0 id free to be used.
+
+if we put close(2), we will not get any error messages
+and open:success will not be displayed
+and then fd=2 since it was available to be used
+
+if we use close(3), it will show bad file discriptor
+the system warns us that the file we are creating is the 
+same to be closed.
