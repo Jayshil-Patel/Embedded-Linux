@@ -1,0 +1,16 @@
+If we want to communicate between two related 
+process we use pipe (parent- child)
+
+The pipe is unidirectional,
+    if parent communicate using pipe P
+    then child cannot use the same pipe
+    so child have to make another pipe say Q
+    The pipe must have an end
+    who created pipe have write end, and who recieve have read end
+    so parent cannot read form pipe p and same goes for child
+    for one pipe we have 2 FD write
+    so write end manages one file descriptor and other end manages other end
+    end 1 of pipe is for write and 0 is for read
+Named pipe :- name we used(p and q) were for our understanding
+but we will name the pipe so that the kernel can understand the pipe name
+or we can call it FIFO
