@@ -1,0 +1,12 @@
+in case of FIFO we cannot send two messages to two 
+different processes at same time
+
+to have multiple messages we will use message queue
+
+we will use api to send and recieve and we will
+also use Structures of c 
+
+"msgget" and "msgsend" are the two api to get and
+recieve the data 
+
+the ids are like python dictionaries they have key and values
