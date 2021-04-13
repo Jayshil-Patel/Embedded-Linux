@@ -1,0 +1,10 @@
+when sender wants to send msg to reciever, the kernel
+will provide memory (its own memory) and memory will be attached
+to sender
+
+here the message wont be cleared after reading unlike message queue, FIFO
+
+here multiple process can write the same shared memory at same time and reading
+process can read it
+
+but problem of context switching will take place.
