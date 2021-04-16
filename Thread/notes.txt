@@ -1,0 +1,1 @@
+to compile these files we muxt use command -lpthread
